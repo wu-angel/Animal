@@ -8,3 +8,4 @@ Route::get('/user', function (Request $request) {
 })->middleware('auth:sanctum');
 
 Route::apiResource('animal', \App\Http\Controllers\AnimalController::class);
+Route::apiResource('types', \App\Http\Controllers\TypeController::class);
