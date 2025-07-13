@@ -15,6 +15,6 @@ class Type extends Model
      */
     public function animals()
     {
-        return $this->hasMany('App\Animal', 'type_id', 'id');
+        return $this->hasMany(Animal::class, 'type_id', 'id');
     }
 }
